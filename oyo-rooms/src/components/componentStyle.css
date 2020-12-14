@@ -1,0 +1,18 @@
+.navbar-login {
+    display: block;
+    background: white;
+    border: 1px solid grey;
+    text-align: right;
+}
+#navbar-login {
+    border: 1px solid grey;
+    height: 60px;
+    width: 140px;
+    text-align: center;
+    margin-right: 50px;
+}
+
+#navbar-login:hover{
+    background: rgb(189, 187, 187);
+    
+}
