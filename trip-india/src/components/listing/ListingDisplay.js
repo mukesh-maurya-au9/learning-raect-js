@@ -1,23 +1,12 @@
-Data API:- 
+import React from 'react';
+import './Listing.css'
+import { Link } from 'react-router-dom';
 
-(get) hotels>         https://developerfunnel.herokuapp.com/hotels
-(get) hotelwrtcity >  https://developerfunnel.herokuapp.com/hotels?city=6
-(get) hoteldetails >  https://developerfunnel.herokuapp.com/hotelsdetails/1
-(get) onbasisoftrip > https://developerfunnel.herokuapp.com/hotellist/1
-(get) roomfilter >    https://developerfunnel.herokuapp.com/hotellist/1?roomtype=1
-(get) costfilter >    https://developerfunnel.herokuapp.com/hotellist/1?hcost=1000&lcost=500
-(get) cityname >      https://developerfunnel.herokuapp.com/location
-(get) rooms >         https://developerfunnel.herokuapp.com/rooms
-(get) triptype>       https://developerfunnel.herokuapp.com/booking
-(get) bookingdetails> https://developerfunnel.herokuapp.com/allBooking
-(post)placebooking >  https://developerfunnel.herokuapp.com/placeBook
-
-
-https://github.com/login/oauth/authorize?client_id=100cc18d754140bbced1
-
-
-if (hotalData.length > 0) {
-                return hotalData.map((item) => {
+const ListingDisplay = (props) => {
+    const renderList = ({ hotelList }) => {
+        if (hotelList) {
+            if (hotelList.length > 0) {
+                return hotelList.map((item) => {
                     return (
                         <div className="item" id={item.id}>
                             <div className="row">
@@ -26,7 +15,7 @@ if (hotalData.length > 0) {
                                 </div>
                                 <div className="col-sm-7">
                                     <div className="hotel_name">
-                                        <Link to={`/details/${item._id}`}>{item.name}</Link></div>
+                                    <Link to={`/details/${item._id}`}>{item.name}</Link></div>
                                     <div className="city_name">{item.city_name}</div>
                                     <div className="address-text">{item.locality}</div>
                                     <div className="address-text">{item.address}</div>
@@ -45,19 +34,27 @@ if (hotalData.length > 0) {
                                 </div>
                             </div>
                         </div>
-                    )
+                    )                
                 })
-            } else {
-                return (
-                    <div> Data </div>
-                )
             }
+            return (
+                <div>
+                    Data
+                </div>
+            )
         } else {
             return (
                 <div>
-                    <img src="/loader.gif" />
+                    <img alt='image' src="/loader.gif" />
                 </div>
             )
         }
-    
     }
+
+    return (
+        <div>
+            {renderList(props)}
+        </div>
+    )
+};
+export default ListingDisplay;

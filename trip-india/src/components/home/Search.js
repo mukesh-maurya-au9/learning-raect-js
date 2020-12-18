@@ -51,11 +51,11 @@ class Search extends Component {
 
     render() {
         return (
-            <div class="imageContainer">
+            <div className="imageContainer">
                 <div id="logo">
                     D!
                 </div>
-                <div className="heading">Plan your trip</div>
+                <div className="heading">Plan Your Trip</div>
                 <div className="locationSelector">
                     <select className="locationDropDown" onChange={this.changeHandler}>
                         <option>---- Select Location ----</option>
