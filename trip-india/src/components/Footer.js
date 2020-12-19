@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 const Footer = () => {
     return (
         <Fragment>
-            
+            <hr/>
             <footer>
                 <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                     <h5>Company name</h5>

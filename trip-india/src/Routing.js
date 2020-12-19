@@ -6,7 +6,8 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import ListingAPI from './components/listing/ListingAPI';
 import ListingDisplay from './components/listing/ListingDisplay';
 // import listingdetails from './components/listing/Listingdetails';
-// import Detailsdisplay from './components/details/Detailsdisplay';
+import Details from './components/details/Detailsdisplay';
+import PlaceBooking from './components/booking/PlaceBooking'; 
 
 
 const Routing = () => {
@@ -16,10 +17,9 @@ const Routing = () => {
                 <Header/>
                     <Route path="/" exact component={Home}/>
                     <Route path="/list/:id" component={ListingAPI}/>
-                    <Route path="/details/:id" component={ListingDisplay}/>
-                    {/* <Route exact path="/" component={Home}/>
-                    <Route  path="/list/:id" component={ListingApi}/>
-                    <Route  path="/details/:id" component={Details}/> */}
+                    <Route path="/listing/:id" component={ListingDisplay}/>
+                    <Route  path="/details/:id" component={Details}/>
+                    <Route  path="/booking/:id" component={PlaceBooking}/>
                 <Footer/>
             </React.Fragment>
         </BrowserRouter>
