@@ -16,3 +16,4 @@ Data API:-
 https://github.com/login/oauth/authorize?client_id=100cc18d754140bbced1
 
 
+json-server --watch db.json --port 8900

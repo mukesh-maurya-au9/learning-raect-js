@@ -7,7 +7,8 @@ import ListingAPI from './components/listing/ListingAPI';
 import ListingDisplay from './components/listing/ListingDisplay';
 // import listingdetails from './components/listing/Listingdetails';
 import Details from './components/details/Detailsdisplay';
-import PlaceBooking from './components/booking/PlaceBooking'; 
+import PlaceBooking from './components/booking/PlaceBooking';
+import ViewBookings from './components/booking/viewBooking'; 
 
 
 const Routing = () => {
@@ -20,6 +21,7 @@ const Routing = () => {
                     <Route path="/listing/:id" component={ListingDisplay}/>
                     <Route  path="/details/:id" component={Details}/>
                     <Route  path="/booking/:id" component={PlaceBooking}/>
+                    <Route  path="/ViewBookings" component={ViewBookings}/>
                 <Footer/>
             </React.Fragment>
         </BrowserRouter>
