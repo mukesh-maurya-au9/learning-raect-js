@@ -58,7 +58,7 @@ class Search extends Component {
         return (
             <div className="imageContainer">
                 <div id="logo">
-                    D!
+                    T!
                 </div>
                 <div className="heading">Plan Your Trip</div>
                 <div className="locationSelector">
