@@ -1,0 +1,83 @@
+body {
+    margin:15px;
+    padding:0;
+    /* background: rgb(31, 30, 30); */
+    background:rgba(40,40,40,0.98);
+    /* color: white; */
+}
+
+/* nav bar css */
+
+.menu {
+    display: inline-flex;
+    justify-content: row;
+    font-size: 22px;
+    padding: 5px 15px;
+}
+.mtube{
+    padding: 15px 2px;
+    font-size: 25px;
+}
+.topnav {
+    overflow: hidden;
+    position: fixed;
+    background:rgba(40,40,40,0.98);
+    left: 0;
+    right: 0;
+    top: 0;
+    padding:15px; 
+  }
+.topNav{
+    float:right;
+    padding: 10px 10px;
+    font-size: 20px;
+    list-style: none;
+    text-align: start;
+    padding: 2px;
+    text-decoration: none;
+
+  }
+
+  /* sidebar css */
+.sidebarDiv {
+    /* display: flex; */
+    border-top: 1px solid grey;
+    border-right: 1px solid grey;
+
+}
+.best{
+    border-bottom: 1px solid grey;
+    padding-bottom: 5px;
+    color: white;
+
+}
+.sidediv1 {
+    font-size: 22px;
+    list-style: none;
+    text-align: start;
+    padding: 2px;
+    text-decoration: none;
+
+}
+.fixedSide{
+    display:-ms-flex;
+    position: fixed;
+    background:rgba(40,40,40,0.98);
+    height: 100%;
+    margin-right: 0%;
+    padding: 30px;
+    left: 0;
+    top: 82px;
+}
+
+
+/* .navbar div:hover {
+    background: #d0dbdb;
+    color: #3d1783; */
+
+/* Trending videos Display */
+/* 
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  } */
