@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux';
-import trendingReducer from './trendingReducer';
+import Videos from './trendingReducer';
+// import SearchReducer from './trendingReducer';
 
 const rootReducer = combineReducers({
-    trendingReducer
+    Videos,
+    // SearchReducer
 });
 
 export default rootReducer; 

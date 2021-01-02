@@ -1,18 +1,20 @@
 import React from 'react';
-import './trendingDisplay.css';
+import './pageCSS/trendingDisplay.css';
 
 
 const TrendingDisplay = (props) => {
-    console.log("in display>>>>",props)
-    const renderVideos = ({tvideos}) => {
-        if(tvideos){
+    console.log("in display>>>>", props)
+    const renderVideos = ({ tvideos }) => {
+        if (tvideos) {
             return tvideos.items.map((data) => {
-                return(
+                return (
                     <div className="tileContainer">
                         <div className="tileComponent1">
-                            <iframe width="300" height="150" src={`https://www.youtube.com/embed/${data.id}`} frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe width="300" height="150" src={`https://www.youtube.com/embed/${data.id.videoId}`} frameBorder="0" 
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullScreen"></iframe>
                         </div>
-                        <div className="tileComponent2">
+                        <div className="tileComponent2"><br />
                             {data.snippet.title}
                             <p>{data.snippet.channelTitle}</p>
                         </div>
@@ -21,7 +23,7 @@ const TrendingDisplay = (props) => {
             })
         }
     }
-    return(
+    return (
         <div>
             <div className="trendingHeading">
                 <p> Trending Videos </p>

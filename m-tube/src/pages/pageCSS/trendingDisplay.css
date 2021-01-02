@@ -23,7 +23,7 @@
 .trendingSubHeading{
     text-align: left;
     color: gray;
-    line-height: .01;
+    /* line-height: .01; */
     letter-spacing: normal;
     font-size:18px;
     font-weight: normal;
@@ -32,7 +32,7 @@
 
 
 .tileContainer{
-    box-shadow: 10px 10px 10px black;
+    /* box-shadow: 10px 10px 10px black; */
     margin-right: 30px;
     margin-bottom: 30px;
     width:300px;
@@ -49,7 +49,7 @@
 .tileComponent2{
     height:100px;
     overflow: hidden;
-    background:rgb(68, 67, 67);
+    background:rgba(40,40,40,0.98);
     color:#ffffff;
     font-size:14px;
     text-align: center;
@@ -69,3 +69,5 @@
     color:white;
     font-size:10px
 }
+
+

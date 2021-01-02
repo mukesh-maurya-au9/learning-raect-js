@@ -2,7 +2,7 @@ body {
     margin:15px;
     padding:0;
     /* background: rgb(31, 30, 30); */
-    background:rgba(40,40,40,0.98);
+    background:rgba(17, 16, 16, 0.98);
     /* color: white; */
 }
 
@@ -13,6 +13,7 @@ body {
     justify-content: row;
     font-size: 22px;
     padding: 5px 15px;
+    
 }
 .mtube{
     padding: 15px 2px;
@@ -21,7 +22,7 @@ body {
 .topnav {
     overflow: hidden;
     position: fixed;
-    background:rgba(40,40,40,0.98);
+    background:rgba(36, 35, 35, 0.98);
     left: 0;
     right: 0;
     top: 0;
@@ -70,7 +71,9 @@ body {
     top: 82px;
 }
 
-
+.searchDiv{
+    margin-left: 200px;
+}
 /* .navbar div:hover {
     background: #d0dbdb;
     color: #3d1783; */

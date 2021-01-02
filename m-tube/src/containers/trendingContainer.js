@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
 import {TrendingVideoAct} from '../actions/Actions';
-import TrendingDisplay from '../components/trendingDisplay';
+import TrendingDisplay from '../pages/trendingDisplay';
 
 class Trending extends Component {
     componentDidMount(){
@@ -18,7 +18,7 @@ class Trending extends Component {
 
 function mapStateToProps(state){
     return({
-        videoList:state.trendingReducer 
+        videoList:state.Videos 
     })
 }
 
